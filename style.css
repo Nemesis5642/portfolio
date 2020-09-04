@@ -1,0 +1,259 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(images/IMG_2180.jpeg);
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;  
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:-apple-system, blinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothicM, YuGothic, Meiryo,Windows, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor :pointer;
+}
+
+a:visited{
+    color: white;
+}
+
+.header{
+    z-index:1;
+    background-color:black;
+    height:60px;  
+    position: fixed;
+    top: 0;
+    width:100%;
+    padding:0 5px;
+}
+
+.headerMenu{
+    float: right;
+    margin-right: 10px;
+}
+
+.headerMenu p{
+    line-height: 30px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s ease;
+    display: block;
+    padding: 10px;
+    background : #333;
+    cursor :pointer;
+    margin:0;
+    margin-top:-77px;
+}
+
+.headerMenu p:hover{
+    transition: 0.5s ease;
+    background : #6b6b6b;
+}
+
+.headerMenu ul{
+    display: none;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    box-shadow: 7px 7px 5px black;
+}
+
+.headerMenu li{
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #333;
+}
+
+.headerMenu li:hover{
+    transition: 0.5s ease;
+    color:#282828;
+    background-color: lightgreen;
+}
+
+.textLogo{
+    text-align: center;
+    text-shadow: black 0 0 2px ,white 0 0 15px,white 0 0 15px;
+    line-height: 500px;
+    margin-top: 210px;
+    font-size:70px;
+    height: 700px;
+}
+
+.textSub{
+    position: absolute;
+    top: 28%;
+    left:44%;
+    font-size: 20px;
+}
+
+.contents{
+    background-color:#333;
+    margin: 5%;
+    padding: 1%;
+    box-shadow: 7px 7px 5px black;
+}
+
+.contentsHeader{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom:solid 3px #838383;
+}
+
+.profile img{
+    margin:10px;
+    margin-top:-90px;
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+
+.profile p:not(.contentsHeader){
+    width: 80%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+span{
+    font-weight: bold;
+    color: lightgreen;
+}
+
+.fabrication img{
+    position: relative;
+    bottom: 90px;
+    float: right; 
+    height: 180px;
+    width: 320px;
+}
+.fabrication iframe{
+    background-color: black;
+    float: right;
+    position: relative;
+    bottom: 90px;
+    height: 180px;
+    width: 320px;
+}
+.notes {
+    color: #838383;
+}
+.footer{
+    z-index:1;
+    padding-left:20px;
+    background-color: black;
+}
+.footer h3{
+    padding:10px;
+    margin: 0;
+}
+.copyRight{
+    color: #838383;
+    float: right;
+    margin-top: 30px;
+}
+
+.footer img{
+    margin-right:15px;
+    border-radius: 10px;
+    height:50px;
+    width: 50px;
+    background-color: #333;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 480px) {/*スマホ用CSS*/
+    .header{
+        height:45px; 
+    }
+
+    .header h1{
+        line-height: 15px;
+        font-size: 20px;
+    }
+
+    .headerMenu {
+        margin-top:40px;
+        margin-right: 15px;
+    }
+
+    .headerMenu p{
+        line-height: 7.5px;
+        width: 100px;
+        height: 15px;
+    }
+
+    .headerMenu li{
+        line-height: 7.5px;
+        width: 100px;
+        height: 15px;
+    }
+
+    .textLogo{
+        line-height: 250px;
+        font-size:35px;
+        height: 500px;
+    }
+    
+    .textSub{
+        position: absolute;
+        top: 37%;
+        left:30%;
+        font-size: 15px;
+    }
+
+    .profile p:not(.contentsHeader){
+        width: 100%;
+    }
+
+    .profile img{
+        width: 150px;
+        height: 150px;
+        margin-top:-30px;
+    }
+
+    .fabrication img{
+        position: unset;
+        float: none;
+        width: 100%;
+    }
+
+    .fabrication iframe{
+        position: unset;
+        float: none;
+        width: 100%;
+    }
+
+    .name{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contentsHeader{
+        font-size: 25px;
+        margin: 10px;
+    }
+}
