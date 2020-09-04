@@ -93,18 +93,22 @@ a:visited{
 }
 
 .textLogo{
-    text-align: center;
+    display: table;
+    width: 100%;
     text-shadow: black 0 0 2px ,white 0 0 15px,white 0 0 15px;
-    line-height: 500px;
     margin-top: 210px;
+    height: 600px;
+}
+
+.textMain{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     font-size:70px;
-    height: 700px;
 }
 
 .textSub{
-    position: absolute;
-    top: 28%;
-    left:44%;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -220,8 +224,8 @@ span{
     
     .textSub{
         position: absolute;
-        top: 37%;
-        left:30%;
+        top: 40%;
+        left:28%;
         font-size: 15px;
     }
 
