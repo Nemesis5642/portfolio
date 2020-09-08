@@ -34,18 +34,21 @@ a:visited{
 }
 
 .header{
+    display: flex;
+    justify-content: space-between;
     z-index:1;
     background-color:black;
     height:60px;  
     position: fixed;
-    top: 0;
     width:100%;
-    padding:0 5px;
+}
+.header h1{
+    margin:10px;
 }
 
 .headerMenu{
-    float: right;
-    margin-right: 10px;
+    margin: 10px;
+    margin-top:-11.5px;
 }
 
 .headerMenu p{
@@ -59,8 +62,7 @@ a:visited{
     padding: 10px;
     background : #333;
     cursor :pointer;
-    margin:0;
-    margin-top:-77px;
+    margin-bottom: 0;
 }
 
 .headerMenu p:hover{
@@ -69,9 +71,9 @@ a:visited{
 }
 
 .headerMenu ul{
+    margin-top: 0;
     display: none;
     list-style: none;
-    margin:0;
     padding: 0;
     box-shadow: 7px 7px 5px black;
 }
@@ -123,24 +125,25 @@ a:visited{
     text-align: center;
     font-weight: bold;
     font-size: 50px;
+    margin-bottom: 0;
     border-bottom:solid 3px #838383;
 }
 
-.profile img{
-    margin:10px;
-    margin-top:-90px;
-    height: 200px;
-    width: 200px;
-    float: right;
+.profile{
+    width: 100%;
+    margin:0;
+    display: flex;
 }
 
-.profile p:not(.contentsHeader){
-    width: 80%;
+.profile img{
+    height: 200px;
+    margin:20px;
 }
 
 .name{
     font-weight: bold;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 span{
@@ -148,37 +151,44 @@ span{
     color: lightgreen;
 }
 
+.fabrication{
+    width: 100%;
+    margin:0;
+    display: flex;
+}
+
 .fabrication img{
-    position: relative;
-    bottom: 90px;
-    float: right; 
     height: 180px;
-    width: 320px;
+    width: 300px;
+    margin:15px;
 }
+
 .fabrication iframe{
-    background-color: black;
-    float: right;
-    position: relative;
-    bottom: 90px;
     height: 180px;
-    width: 320px;
+    width: 300px;
+    margin:15px;
 }
+
 .notes {
     color: #838383;
 }
+
 .footer{
     z-index:1;
     padding-left:20px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
 .footer h3{
     padding:10px;
     margin: 0;
 }
+
 .copyRight{
     color: #838383;
-    float: right;
-    margin-top: 30px;
 }
 
 .footer img{
@@ -187,78 +197,97 @@ span{
     height:50px;
     width: 50px;
     background-color: #333;
-    margin-bottom: 15px;
 }
-@media screen and (max-width: 480px) {/*スマホ用CSS*/
+
+@media screen and (max-width: 480px) {
     .header{
-        height:45px; 
+        height:45px;  
     }
 
     .header h1{
-        line-height: 15px;
-        font-size: 20px;
+        margin:5px;
+        margin-top:10px;
+        font-size:20px;
     }
-
-    .headerMenu {
-        margin-top:40px;
-        margin-right: 15px;
+    
+    .headerMenu{
+        margin: 5px;
+        margin-top:-11.5px;
     }
 
     .headerMenu p{
-        line-height: 7.5px;
-        width: 100px;
+        line-height: 15px;
+        width: 80px;
         height: 15px;
     }
 
     .headerMenu li{
-        line-height: 7.5px;
-        width: 100px;
+        width: 80px;
+        font-size:14px;
         height: 15px;
+        line-height: 15px;
     }
 
     .textLogo{
         margin-top: 100px;
-        height: 500px;
+        height: 600px;
     }
 
     .textMain{
         font-size:35px;
     }
     
-    
     .textSub{
         font-size: 15px;
     }
 
-    .profile p:not(.contentsHeader){
-        width: 100%;
+    .contentsHeader{
+        font-size: 35px;
+        margin-bottom: 0;
+        margin-top:10px;
+    }
+
+    .profile{
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .profile img{
-        width: 150px;
-        height: 150px;
-        margin-top:-30px;
-    }
-
-    .fabrication img{
-        position: unset;
-        float: none;
-        width: 100%;
-    }
-
-    .fabrication iframe{
-        position: unset;
-        float: none;
-        width: 100%;
+        margin:10px auto;
     }
 
     .name{
-        font-size: 20px;
-        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+        margin:0;
     }
 
-    .contentsHeader{
-        font-size: 25px;
-        margin: 10px;
+    .fabrication{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .fabrication img{
+        margin:10px auto;
+    }
+
+    .fabrication iframe{
+        margin:10px auto;
+    }
+
+    .footer{
+        padding:10px;
+        padding-top: 0;
+    }
+
+    .linkImage{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .links{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
     }
 }
