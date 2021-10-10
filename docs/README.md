@@ -1,2 +1,2 @@
 # Portfolio
-Nemesis62543のポートフォリオです。
+Noboru Yamaguchiのポートフォリオです。
