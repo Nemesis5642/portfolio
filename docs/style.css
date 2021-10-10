@@ -1,293 +1,235 @@
 html{
+    font-size: 14px;
+    color: #FFF;
     height: 100%;
-    overflow: hidden;
+    font-family:serif;
+    background-color: rgb(27, 27, 27);
 }
 
-body {
-    background-image: url(images/IMG_2180.jpeg);
-    background-color:rgba(255,255,255,0.3);
-    background-blend-mode:lighten;  
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
+body{
     margin: 0;
     padding: 0;
-    color: white;
-    font-family:-apple-system, blinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothicM, YuGothic, Meiryo,Windows, sans-serif;
 }
 
 a{
-    color: white;
     text-decoration: none;
-    cursor :pointer;
 }
 
 a:visited{
     color: white;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    z-index:1;
-    background-color:black;
-    height:60px;  
-    position: fixed;
-    width:100%;
-}
-.header h1{
-    margin:10px;
+a:hover{
+    color: rgb(107, 188, 110);
 }
 
-.headerMenu{
-    margin: 10px;
-    margin-top:-11.5px;
+h2{
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
-.headerMenu p{
-    line-height: 30px;
-    font-weight: bold;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    transition: 0.5s ease;
-    display: block;
-    padding: 10px;
-    background : #333;
-    cursor :pointer;
-    margin-bottom: 0;
+h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
-.headerMenu p:hover{
-    transition: 0.5s ease;
-    background : #6b6b6b;
+p{
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
-.headerMenu ul{
-    margin-top: 0;
-    display: none;
-    list-style: none;
-    padding: 0;
-    box-shadow: 7px 7px 5px black;
-}
+/*以下ヘッダーのCSS*/
 
-.headerMenu li{
-    width: 100px;
-    font-weight: bold;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    padding: 10px;
-    background-color: #333;
-}
-
-.headerMenu li:hover{
-    transition: 0.5s ease;
-    color:#282828;
-    background-color: lightgreen;
-}
-
-.textLogo{
-    display: table;
-    width: 100%;
-    text-shadow: black 0 0 2px ,white 0 0 15px,white 0 0 15px;
-    margin-top: 210px;
-    height: 600px;
-}
-
-.textMain{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size:70px;
-}
-
-.textSub{
-    text-align: center;
-    font-size: 20px;
-}
-
-.contents{
-    background-color:#333;
-    margin: 5%;
-    padding: 1%;
-    box-shadow: 7px 7px 5px black;
-}
-
-.contentsHeader{
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 0;
-    border-bottom:solid 3px #838383;
-}
-
-.profile{
-    width: 100%;
-    margin:0;
-    display: flex;
-}
-
-.profile img{
-    height: 200px;
-    margin:20px;
-}
-
-.name{
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-span{
-    font-weight: bold;
-    color: lightgreen;
-}
-
-.fabrication{
-    width: 100%;
-    margin:0;
-    display: flex;
-}
-
-.fabrication img{
-    height: 180px;
-    width: 300px;
-    margin:15px;
-}
-
-.fabrication iframe{
-    height: 180px;
-    width: 300px;
-    margin:15px;
-}
-
-.notes {
-    color: #838383;
-}
-
-.footer{
-    z-index:1;
-    padding-left:20px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.footer h3{
-    padding:10px;
-    margin: 0;
-}
-
-.copyRight{
-    color: #838383;
-}
-
-.footer img{
-    margin-right:15px;
-    border-radius: 10px;
-    height:50px;
-    width: 50px;
-    background-color: #333;
-}
-
-@media screen and (max-width: 480px) {
     .header{
-        height:45px;  
+        position: relative;
     }
 
-    .header h1{
-        margin:5px;
-        margin-top:10px;
-        font-size:20px;
-    }
-    
-    .headerMenu{
-        margin: 5px;
-        margin-top:-11.5px;
-    }
-
-    .headerMenu p{
-        line-height: 15px;
-        width: 80px;
-        height: 15px;
-    }
-
-    .headerMenu li{
-        width: 80px;
-        font-size:14px;
-        height: 15px;
-        line-height: 15px;
-    }
-
-    .textLogo{
-        margin-top: 100px;
+    .header img{
+        width: 100%;
         height: 600px;
+        object-fit: cover;
     }
 
-    .textMain{
-        font-size:35px;
-    }
-    
-    .textSub{
-        font-size: 15px;
+    .header_text{
+        left: 10px;
+        position: absolute;
     }
 
-    .contentsHeader{
-        font-size: 35px;
-        margin-bottom: 0;
-        margin-top:10px;
+    .header_text h1{
+        margin: 0;
     }
 
+    .header_contents{
+        right: 0;
+        position: absolute;
+        overflow: hidden;
+        width:fit-content;
+    }
+
+    .menu_contents{
+        padding: 5px;
+        float: left;
+    }
+
+    .menu_contents p{
+        padding: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .menu_contents a{
+        color: white;
+    }
+
+    .menu_contents a:hover{
+        color: rgb(107, 188, 110);
+    }
+
+    .title{
+        padding: 0 20px;
+        font-size: 24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: center;
+        border-bottom: solid 1px white;
+    }
+
+/*以下メインコンテンツのCSS*/
+
+/*自己紹介文章*/
     .profile{
-        align-items: flex-start;
-        flex-direction: column;
+        padding-top: 10px;
+        margin:15px 70px;
+        width:fit-content;
+        background-color: rgb(45, 45, 45);
+    }
+
+    .profile .profile_contents_parent{
+        margin:0%;
+        padding-left: 10px;
+        display:flex;
+        list-style:none;
     }
 
     .profile img{
-        margin:10px auto;
+        height: 300px;
     }
 
-    .name{
-        font-weight: bold;
+    .profile_text{
+        padding: 10px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .profile span{
+        color: rgb(107, 188, 110);
+    }
+
+    .profile_text h2{
+        font-size: 30px;
+        border-bottom: solid rgb(103, 103, 103);
+    }
+
+    .profile_text p{
+        padding: 5px;
+        padding-bottom: 0%;
+    }
+
+/*キャリア*/
+    .career{
+        background-color: rgb(27, 27, 27);
+    }
+
+    .career h2{
+        padding-left: 30px;
+        font-size: 30px;
+        background-color: black;
+        border-bottom: double 8px rgb(107, 188, 110);
+    }
+
+    .career_contents{
+        margin: 0 70px;
+        padding: 10px 20px;
+        border-bottom: solid 1px rgb(103, 103, 103);
+    }
+
+    .career span{
+        color: rgb(107, 188, 110);
+    }
+
+    .career_contents ul{
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .notes{
+        padding-right: 10px;
+        float: right;
+        color: rgb(152, 152, 152);
+    }
+
+/*制作物*/
+    .Achievements_title{
+        margin-top: -7px;
+        padding-left: 30px;
+        font-size: 30px;
+        background-color: black;
+        border-bottom: double 8px rgb(107, 188, 110);
+    }  
+
+    .Achievements_contents_parent{
+        margin: 40px 100px;
+        background-color: rgb(45, 45, 45);
+    }
+    
+    .Achievements_contents{
+        margin: 0;
+        padding: 0;
+        display:flex;
+        flex-wrap: nowrap;
+        list-style:none;
+    }
+
+    .Achievements_contents h2{
         font-size: 25px;
-        margin:0;
+        border-bottom: solid  rgb(103, 103, 103);
     }
 
-    .fabrication{
-        align-items: flex-start;
-        flex-direction: column;
+    .Achievements_contents li{
+        width: 50%;
     }
 
-    .fabrication img{
-        margin:10px auto;
+    .Achievements_contents img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    .fabrication iframe{
-        margin:10px auto;
+    .Achievements_text{
+        padding: 20px;
     }
 
+    .Achievements_text span{
+        color: rgb(107, 188, 110);
+    }
+
+/*フッター*/
     .footer{
-        padding:10px;
-        padding-top: 0;
+        padding: 10px;
+        margin-top: 30px;
+        background-color: black;
     }
 
-    .linkImage{
-        display: flex;
-        justify-content: space-between;
+    .footer p{
+        padding-left: 10px;
     }
 
-    .footer .links{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+    .footer ul{
+        margin: 0;
     }
-}
+
+    .footer .SNS{
+        padding:0 5px;
+    }
