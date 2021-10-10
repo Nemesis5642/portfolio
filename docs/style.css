@@ -60,6 +60,7 @@ p{
     }
 
     .header_contents{
+        font-size: 18px;
         right: 0;
         position: absolute;
         overflow: hidden;
@@ -213,6 +214,15 @@ p{
 
     .Achievements_text span{
         color: rgb(107, 188, 110);
+    }
+
+    .Achievements_link{
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .Achievements_link li{
+        width: 100%;
     }
 
 /*フッター*/
