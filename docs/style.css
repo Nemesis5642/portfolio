@@ -222,6 +222,7 @@ p{
     }
 
     .Achievements_link li{
+        margin: 0;
         width: 100%;
     }
 
