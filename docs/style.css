@@ -258,6 +258,13 @@ p{
         padding:0 5px;
     }
 
+@media screen and (max-width: 1024px) {
+    .header_image .title{
+        font-size: 20px;
+        top: 20%;
+    }
+}
+
 @media screen and (max-width: 670px) {
 
     html{
@@ -267,7 +274,7 @@ p{
     /*以下ヘッダーのCSS*/
 
     .header h1{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .header_contents{
@@ -276,7 +283,7 @@ p{
 
     .header_image .title{
         font-size: 20px;
-        top: 20%;
+        top: 25%;
     }
 
 /*以下メインコンテンツのCSS*/
