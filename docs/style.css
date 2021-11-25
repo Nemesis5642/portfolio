@@ -141,6 +141,40 @@ p{
         padding-bottom: 0%;
     }
 
+/*メインコンテンツ*/
+    .mainContents h2{
+        padding-left: 30px;
+        font-size: 30px;
+        background-color: black;
+        border-bottom: double 8px rgb(107, 188, 110);
+    }
+
+    .masterpiece_contents{
+        margin: 40px 100px;
+    }
+
+    .masterpiece{
+        margin: 20px;
+        position: relative;
+    }
+
+    .masterpiece_name{
+        padding: 0 20px;
+        font-size: 24px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        background-color: rgb(45, 45, 45);
+    }
+
+    .masterpiece img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
 /*キャリア*/
     .career{
         background-color: rgb(27, 27, 27);
@@ -255,7 +289,12 @@ p{
     }
 
     .footer .SNS{
-        padding:0 5px;
+        padding:0 20px;
+    }
+
+    .footer .links{
+        display: flex;
+        padding-bottom: 30px;
     }
 
 @media screen and (max-width: 1024px) {
@@ -308,6 +347,25 @@ p{
         font-size: 20px;
     }
 
+/*メインコンテンツ*/
+    .mainContents h2{
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    .masterpiece_contents{
+        margin: 15px;
+    }    
+
+    .masterpiece_name{
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .masterpiece img{
+        height: 120px;
+    }
+
 /*キャリア*/
 
     .career h2{
@@ -350,5 +408,10 @@ p{
 
     .Achievements_text{
         padding: 10px;
+    }
+
+/*フッター*/
+    .footer .SNS{
+        padding:0 10px;
     }
 }
